@@ -49,9 +49,9 @@ const App = () => {
   };
 
   const onDelete = deletedId => {
-    setContacts(prevState => {
-      prevState.filter(contact => contact.id !== deletedId);
-    });
+    setContacts(prevState =>
+      prevState.filter(contact => contact.id !== deletedId)
+    );
   };
 
   const filteredContacts = getFilteredContacts();
